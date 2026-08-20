@@ -1,0 +1,48 @@
+Reference,Value,Footprint,Qty,LCSC,Description
+"C4,C5",12pF,Capacitor_SMD:C_0603_1608Metric,2,,
+"C6,C7,C8,C9,C10,C11,C13,C15,C17,C18,C19",0.1uF,Capacitor_SMD:C_0603_1608Metric,11,,
+L1,3.3uH,Inductor_SMD:L_Wuerth_MAPI-2512,1,C5832359,FTC252010S3R3MBCA
+"C12,C14",4.7uF,Capacitor_SMD:C_0603_1608Metric,2,,
+"C1,C2,C3,C16",10uF,Capacitor_SMD:C_0603_1608Metric,4,,
+"R6,R7,R11",27R,Resistor_SMD:R_0603_1608Metric,3,,
+"R2,R5,R9",2K,Resistor_SMD:R_0603_1608Metric,3,,
+"R1,R3,R4,R8,R10",100K,Resistor_SMD:R_0603_1608Metric,5,,
+SW8,A,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+SW7,B,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+Q1,BSS84,Package_TO_SOT_SMD:SOT-23,1,C85202,
+Y1,CM4012M00012001,Crystal:Crystal_SMD_2520-4Pin_2.5x2.0mm,1,C7294611,
+"J10,J11,J15,J16,J17,J19,J20",Conn_01x01,Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical,7,,"Generic connector, single row, 01x01, 1.27mm, through hole vertical"
+"J9,J12,J13,J14,J18",Conn_01x02,Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical,5,,"Generic connector, single row, 01x02, 1.27mm, through hole vertical"
+J3,Conn_01x05,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,1,,"Generic connector, single row, 01x05, 1.27mm, through hole vertical"
+"J1,J4",Conn_01x10,Connector_PinHeader_1.27mm:PinHeader_1x10_P1.27mm_Vertical,2,,"Generic connector, single row, 01x10, 1.27mm, through hole vertical"
+J5,Conn_Pi_SWD,Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical,1,C7433439,
+J6,Conn_Pi_UART,Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical,1,C7433439,
+D1,D_Schottky_Small,Diode_SMD:D_SOD-323,1,C114023,B5817WS-SJ
+SW6,DOWN,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+U4,FLASH or PSRAM,Package_SO:SSOP-8_5.25x5.24mm_P1.27mm,1,,
+J8,I2S_AUDIO,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,1,,
+J7,LCD_ST7789,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,1,,
+D2,LED_CHR,LED_SMD:LED_0603_1608Metric,1,,Orange
+SW4,LEFT,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+U2,ME4055,Package_TO_SOT_SMD:SOT-23-6,1,C82121,
+U3,ME6211,Package_TO_SOT_SMD:SOT-23-5,1,C82942,
+SW5,RIGHT,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+U5,RP2350B,Package_DFN_QFN_Extra:QFN-80_EP_10x10_Pitch0.4mm,1,,
+SW9,SELECT,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+SW10,START,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+SW2,SW_BOOTSEL,Button_Switch_SMD:SW_SPST_B3U-1000P,1,C561514,TS-3025-A-A-B
+SW1,SW_RESET,Button_Switch_SMD:SW_SPST_B3U-1000P,1,C561514,TS-3025-A-A-B
+SW3,UP,Button_Switch_SMD:SW_SPST_B3U-1000P,1,,
+U1,W25Q128JVPIQ,Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm,1,C190862,
+LCD1,Waveshare_1.47in_172x320_ST7789V3,,1,,External Waveshare LCD module from supplied link; connects to existing J7 LCD_ST7789
+AMP1,MAX98357A_I2S_Audio_Module,,1,,External I2S mono Class-D amplifier module; connects to existing J8 I2S_AUDIO
+SPK1,4R_3W_Speaker,,1,,External 4 ohm 2-3W speaker for MAX98357A OUT+/OUT-
+USB1,USB-C_5V_Power_Breakout,,1,,OPTION A: external USB-C 5V power breakout; connect VBUS to existing +5V input and GND to GND
+J21,USB_C_Receptacle_USB2.0_16P,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,1,C165948,OPTION B: raw on-board USB-C receptacle; use instead of USB1
+"R12,R13",5.1K,Resistor_SMD:R_0603_1608Metric,2,C23186,USB-C CC1/CC2 pull-down resistors; required only with raw J21 option
+D3,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,1,C7519,USB D+/D- ESD protection; use with raw USB-C data connection
+J22,BATTERY_1S,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,C131337,JST-PH 2.0mm 2-pin connector for 1S LiPo or protected 18650 supply
+BAT1,1S_LiPo_3.7V,,1,,OPTION A battery: protected 1S LiPo pack; capacity/size to suit enclosure
+BT1,18650_Holder_1S,,1,,OPTION B battery: single 18650 holder
+BMS1,1S_LiIon_Protection_BMS,,1,,18650/cell only; protection-only BMS because existing ME4055 already handles charging
+SW11,POWER_ON_OFF,Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN,1,,SPDT slide power switch; can use existing LDO_EN/VIN/GND arrangement without changing core circuitry
