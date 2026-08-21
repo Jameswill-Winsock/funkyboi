@@ -2,7 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/clocks.h"
 
-// ---------------- Microboy pin map ----------------
+// ---------------- funkyboi pin map ----------------
 #define PIN_LCD_MOSI 40
 #define PIN_LCD_SCK  41
 #define PIN_LCD_CS   42
@@ -203,7 +203,7 @@ int main(void) {
     lcd_init();
     lcd_color_bars();
 
-    printf("Microboy bring-up started. sys_clk=%u Hz\n", clock_get_hz(clk_sys));
+    printf("funkyboi bring-up started. sys_clk=%u Hz\n", clock_get_hz(clk_sys));
     printf("Press buttons: screen color changes and USB serial prints state.\n");
 
     uint16_t last = 0xFFFF;
