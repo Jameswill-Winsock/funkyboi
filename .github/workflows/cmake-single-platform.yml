@@ -1,0 +1,57 @@
+# This starter workflow is for a CMake project running on a single platform. There is a different starter workflow if you need cross-platform coverage.
+# See: https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml
+name: CMake on a single platform
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  BUILD_TYPE: Release
+
+jobs:
+  build:
+    # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
+    # You can convert this to a matrix build if you need cross-platform coverage.
+    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Configure CMake
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+
+    - name: Build
+      # Build your program with the given configuration
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+
+    - name: Test
+      working-directory: ${{github.workspace}}/build
+      # Execute tests defined by the CMake configuration.
+      # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
+      run: ctest -C ${{env.BUILD_TYPE}}
+    - name: Pico Build Action
+      # You may pin to the exact commit or the version.
+      # uses: samyarsadat/Pico-Build-Action@dbb9ed078bfed217ef917dd09860c2c5096e8eb9
+      uses: samyarsadat/Pico-Build-Action@v1.3.0
+      with:
+        # Source code directory. The CMakeLists.txt file should be here.
+        source_dir: firmware
+        # Output directory for build artifacts. This path is relative to the source directory.
+        output_dir: # optional, default is build
+        # A space-separated list of output binary file extensions. Default is '*.uf2 *.elf *.elf.map'. There must be a '*' before each extension.
+        output_ext: # optional, default is *.uf2 *.elf *.elf.map
+        # Additional arguments to pass to CMake.
+        cmake_args: gerber, pcb 
+        # A space-separated list of directories to ignore when copying binary build artifacts. CMakeFiles, pico-sdk, pioasm, and elf2uf2 are ignored regardless.
+        output_ignored_dirs: # optional, default is 
+        # Only configure CMake and generate build files. Do not build the project.
+        cmake_config_only: # optional, default is false
+        # CMake generator to use for generating build files. Default is 'Unix Makefiles'.
+        makefiles_generator: # optional, default is Unix Makefiles
