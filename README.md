@@ -7,7 +7,7 @@ he's a work in progress, please bear with him
 
 ## What is this?
 like you read, a gba clone. its meant to be as small in form factor as possible, and currently i've achieved this with the core. 
-it significantly borrows from the solderparty stamp xl in form of the schematic, but pcb was remade because it wouldn't open for me for some reason. some differences between those and this are:
+it borrows from the solderparty stamp xl in form of the schematic, but pcb was remade because it wouldn't open for me for some reason. some differences between those and this are:
 - lack of castelled edge based breakout (swapped to normal through holes)
 - no proper power plane or signal plane (i have no idea how those work, i only know ground copper pour)
 - power network significantly changed to be more unified (arguably, more unstable, but throw on some 100nf capacitors and it fixes everything.)
