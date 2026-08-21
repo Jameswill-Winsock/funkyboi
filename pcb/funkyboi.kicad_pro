@@ -528,7 +528,7 @@
     ]
   },
   "meta": {
-    "filename": "microboy.kicad_pro",
+    "filename": "funkyboi.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -707,8 +707,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "microboy.kicad_sch",
-        "name": "microboy",
+        "filename": "funkyboi.kicad_sch",
+        "name": "funkyboi",
         "uuid": "019f2816-6bfb-4531-95b3-45f73cf5fc4b"
       }
     ],
@@ -718,7 +718,7 @@
   "sheets": [
     [
       "019f2816-6bfb-4531-95b3-45f73cf5fc4b",
-      "microboy"
+      "funkyboi"
     ]
   ],
   "text_variables": {},
