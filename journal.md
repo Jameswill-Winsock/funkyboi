@@ -50,3 +50,5 @@ Afterwards I added all the silkscreen stuff. Also converted my profile picture d
 
 *I said, "Better late than never*<br>
 *Just don't make me wait forever"*
+
+Total hours spent: approx 5 hours.
