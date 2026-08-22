@@ -1,6 +1,7 @@
+ea
 # Guerilla speedrun hackathon - my experience
 
-19/08/2026 and 20/08/2026 IST
+### 19/08/2026 and 20/08/2026 IST
 
 Genuine banger of an event. I did spend so many hours holed up like a hobbit routing pcb like a mad man, but hey, its pretty cool.
 
@@ -32,3 +33,20 @@ The next part will be to make this as concise as possible, and live up to its tr
 
 Total hours spent: approx 10 hours.
  
+
+
+
+
+### 21/08/2026 IST
+In order to get it approved, I was asked to make it smaller and less chonky. Sure, I had to do that anyways, and if I get time for that too? Heck yeah. So I started shrinking it.
+
+The first part was to replace the screen. It was kinda too big earlier, so I swapped it out with a square 0.96 inch oled. The buttons are also taken off board and will be mounted on top of the pcb via mounting holes onto a protoboard, so theres that. Space reduction was made mainly vertical, like how the new oled will be mounted using the pin headers as its supports.
+
+Next, the pcb. Its traces were stretched too far out earlier because of all the buttons and screen. Now that they were gone, I could shrink this down easily. GPIO has also been placed closer in, but instead for the GPIO expansion for later, I've opted to use 1.27mm headers instead of 2.54mm standard headers to save space. Similarly, because of all the rearrangement, I've also had to redo the pins and pick other ones (including the correct ones this time for SCL and SDA for the display lmao)
+
+Afterwards I added all the silkscreen stuff. Also converted my profile picture drawing to vector, then cleaned it up. Makes a nice addition. Senchou is love senchou is life :3
+![alt text](images/image-4.png)
+![alt text](images/image-5.png)
+
+*I said, "Better late than never*<br>
+*Just don't make me wait forever"*
