@@ -1,8 +1,8 @@
 # funkyboi
 a funky chonky handheld gba clone
 
-![alt text](images/image.png)
-![alt text](images/image.png)
+![](images/image-1.png)
+![](images/AHHHH.png)
 
 he's a work in progress, please bear with him
 
